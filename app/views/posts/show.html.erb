@@ -1,4 +1,8 @@
 <h1>タイトル</h1>
-<%= @post.title %>
+
+<p><%= @post.title %></p>
 <h1>本文</h1>
-<%= @post.body %>
+<p><%= @post.body %></p>
+
+<%= link_to "編集", edit_post_path(@post.id) %>
+
